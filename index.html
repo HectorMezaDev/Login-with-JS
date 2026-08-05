@@ -10,32 +10,43 @@
         <div class="container">
             <div class="title">Login</div>
         
-            <form action="functions.js">
+            <form id="form-validation" novalidate>
                 <div class="form-group">
                     <span>Name</span>
-                    <input type="text" placeholder="Enter your name" required>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <small id="error-name" >Please enter your name</small>
                 </div>
         
                 <div class="form-group">
                     <span>Surname</span>
-                    <input type="text" placeholder="Enter your Surname" required>
+                    <input type="text" id="surname" placeholder="Enter your Surname" required>
+                    <small id="error-surname" >Please enter your Surname  </small>               
                 </div>
         
                 <div class="form-group">
                     <span>Email Address</span>
-                    <input type="email" placeholder="Enter your Email Address" required>
+                    <input type="email" id="email" placeholder="Enter your Email Address" required>
+                    <small id="error-email" >Please enter your email</small>
+                </div>
+
+                <div class="form-group">
+                    <span>Phone</span>
+                    <input type="text" id="phone" placeholder="Ingrese su teléfono">
+                   <small id="error-phone">Invalid phone number</small>
                 </div>
         
                 <div class="form-group">
                     <span>Account Number</span>
-                    <input type="number" placeholder="Enter your Account Number" required>
+                    <input type="text" id="accountn" placeholder="Enter your Account Number" required>
+                    <small id="error-accountn">Please enter your account number</small>
                 </div>
 
                 <div class="button">
-                    <input type="button" value="Login">
+                    <input type="submit" value="Login">
                 </div>
 
             </form>
         </div>
+        <script src="functions.js"></script>
     </body>
 </html>

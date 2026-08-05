@@ -1,19 +1,27 @@
 *{margin : 0; padding: 0; box-sizing: border-box;}
 
+small{
+    display: none;
+}
+.was-validated small{
+    display: block;
+    color: red;
+}
+
 body{
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(to bottom, #573f3f, #d0d0d0);
+    background: linear-gradient(to bottom, #9eb0e4, #34065a);
 }
 
 .container{
     max-width: 400px;
     width: 100%;
     padding: 20px 20px;
-    background-color: #fff;
+    background-color: #f8fafc;
     border-radius: 10px;
 }
 
@@ -52,7 +60,7 @@ form span{
     padding: 0 15px;
     font-size: 12px;
     border-radius: 5px;
-    border: 1px solid #969696;
+    border: 1px solid #77d9e6;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
 }
@@ -83,6 +91,19 @@ form .button input{
     border: none;
     border-radius: 5px;
 }
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding top: 10px;
+}
+
+form .button + .button{
+    margin-top: 0;
+}
+
 
 @media(max-width: 500px){
     .container{
